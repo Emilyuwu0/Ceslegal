@@ -1,1 +1,5 @@
-# Rama de cambios actuales Dev/Emily
+# Importante❗ 
+ 
+Rama donde se trabaja ➡️ Dev/Emily
+
+Para luego actualizar Main
