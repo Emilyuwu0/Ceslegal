@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import Logo from "../../assets/logo.png";
 import LogoMenu from "../../assets/icon-menu.png";
-import "../../styles/variables.css";
+import "../../styles/general.css";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function Header() {
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-between p-2 lg:px-8"
+          className="flex items-center justify-between p-2 lg:px-8 bg-white"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
