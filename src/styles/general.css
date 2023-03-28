@@ -8,50 +8,72 @@
 }
 
 .background-principal {
-  background-color:  #414B59;
+  background-color: #414B59;
 }
+
 .font-size-paragraphs {
   font-size: 0.8rem;
 }
 
-.img-content{
+.img-content {
   position: absolute;
   width: 32rem;
   right: 6rem;
-margin-top: 2rem;
-}
-.recursived-div{
-  margin-top:10rem;
-  margin-bottom: 5rem;
-}
-@media(max-width: 640px){
-  .img-content{
- margin-top: 4rem;
-    position: relative;
-    right:3rem;
-  }
-  .height-div{
-    height:45rem;
-  }
-  .recursived-div{
-    margin-top:5rem;
-    margin-bottom: 5rem;
-  }
+  margin-top: 2rem;
 }
 
-@media(min-width: 641px)and (max-width:1000px){
-  .img-content{
- margin-top: 4rem;
+.recursived-div {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+@media(max-width: 640px) {
+  .img-content {
+    margin-top: 4rem;
+    position: relative;
+    right: 3rem;
+  }
+
+  .height-div {
+    height: 45rem;
+  }
+
+  .recursived-div {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .separated-content {
+    display: none;
+  }
+  .margin-top-description{
+margin-top: 5rem;
+  }
+  .square-img{
+    display: none;
+  }
+}
+.div-before-card{
+  color: transparent;
+}
+@media(min-width: 641px)and (max-width:1000px) {
+  .img-content {
+    margin-top: 4rem;
     position: absolute;
-    right:2rem;
+    right: 2rem;
     width: 25rem;
   }
-  .recursived-div{
-    margin-top:4rem;
+
+  .recursived-div {
+    margin-top: 4rem;
     margin-bottom: 4rem;
   }
-/*   .height-div{
+
+  .separated-content {
+    display: none;
+  }
+
+  /*   .height-div{
     height:45rem;
   } */
 }
-
