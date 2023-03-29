@@ -1,15 +1,16 @@
 import React from "react";
 import "../styles/general.css";
+import "../styles/variables.css"
 import LogoContent from "../assets/logo-content.png";
 import Square from "../assets/square.png";
 export default function homePage() {
   return (
     <div className=" mb-32 ">
       {" "}
-      <div className="relative isolate  pt-24 lg:px-8 bg-slate-800 height-div">
+      <div className="relative isolate  pt-24 lg:px-8 bg-principal height-div">
         <div className=" p-2 ">
           <div className=" sm:mb-8 sm:flex sm:justify-center">
-            <div class="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
               <div>
                 <h3 className="text-white text-3xl recursived-div">
                   Legal services for your SME with the costs you are looking for
@@ -27,7 +28,7 @@ export default function homePage() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-400 py-4 px-16 separated-content">
+      <div className="bg-tertiary py-4 px-16 separated-content">
         <span>
           News:
           <span>
@@ -36,7 +37,7 @@ export default function homePage() {
         </span>
       </div>
       <div className="p-6 bg-white margin-top-description sm:p-10">
-        <div class="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
           <div>
             <img src={Square} className="m-auto square-img" />
           </div>
@@ -54,8 +55,8 @@ export default function homePage() {
           </div>
         </div>
       </div>
-      <div className=" sm:px-44 px-10 mb-20">
-        <h3 className="text-center font-bold text-2xl mb-6">
+      <div className=" sm:px-44 px-10 bg-tertiary pb-20">
+        <h3 className="text-center font-bold text-2xl mb-6 pt-20">
           Ejes de valor de nuestros Servicios legales
         </h3>
         <p className="text-center">
@@ -64,13 +65,12 @@ export default function homePage() {
           especialización, tecnología y procesos. Con esto logramos democratizar
           el derecho poniéndolo al alcance de todas las PYMES.
         </p>
-        <div class="grid grid-cols-1 gap-16 p-6 sm:grid-cols-2">
-          <div >
-            <div className="bg-pink-300 border-b border-gray-200  rounded-md h-44 ">
+        <div className="grid grid-cols-1 gap-16 p-6 sm:grid-cols-2 ">
+          <div>
+            <div className="div-bg-one border-b border-gray-200  rounded-md h-full ">
               <div className="div-before-card">title</div>
-              <div className="bg-purple-400 p-4 mt-16 rounded-b-md">
-
-                <h3 className="text-base font-semibold leading-6 text-gray-900">
+              <div className="div-card-text p-4 mt-16 rounded-b-md">
+                <h3 className=" font-bold leading-6 text-white text-xl">
                   Reducción de costos en los Servicios legales
                 </h3>
                 <p>
@@ -82,56 +82,179 @@ export default function homePage() {
               </div>
             </div>
           </div>
-          <div>   <div >
-           
-          </div></div>
-          <div>   <div >
-            <div className="bg-pink-300 border-b border-gray-200  rounded-md h-44 ">
-              <div className="div-before-card">title</div>
-              <div className="bg-purple-400 p-4 mt-16 rounded-b-md">
-
-                <h3 className="text-base font-semibold leading-6 text-gray-900">
-                  Reducción de costos en los Servicios legales
-                </h3>
-                <p>
-                  Nuestra visión es poner al alcance de las PYMEs los servicios
-                  legales que requieren. Por esto estamos constantemente
-                  revisando nuestros procesos e incluyendo nuevas tecnologías
-                  que permiten tener un bajo costo, pero con una alta calidad.
-                </p>
+          <div>
+            {" "}
+            <div>
+              <div className="div-bg-two border-b border-gray-200  rounded-md h-full ">
+                <div className="div-before-card">title</div>
+                <div className="div-card-text p-4 mt-16 rounded-b-md">
+                  <h3 className=" font-bold leading-6 text-white text-xl">
+                    Reducción de costos en los Servicios legales
+                  </h3>
+                  <p>
+                    Nuestra visión es poner al alcance de las PYMEs los
+                    servicios legales que requieren. Por esto estamos
+                    constantemente revisando nuestros procesos e incluyendo
+                    nuevas tecnologías que permiten tener un bajo costo, pero
+                    con una alta calidad.
+                  </p>
+                </div>
               </div>
             </div>
-          </div></div>
-          <div>   <div >
-            <div className="bg-pink-300 border-b border-gray-200  rounded-md h-44 ">
-              <div className="div-before-card">title</div>
-              <div className="bg-purple-400 p-4 mt-16 rounded-b-md">
-
-                <h3 className="text-base font-semibold leading-6 text-gray-900">
-                  Reducción de costos en los Servicios legales
-                </h3>
-                <p>
-                  Nuestra visión es poner al alcance de las PYMEs los servicios
-                  legales que requieren. Por esto estamos constantemente
-                  revisando nuestros procesos e incluyendo nuevas tecnologías
-                  que permiten tener un bajo costo, pero con una alta calidad.
-                </p>
+          </div>
+          <div>
+            {" "}
+            <div>
+              <div className="div-bg-three border-b border-gray-200  rounded-md h-full ">
+                <div className="div-before-card">title</div>
+                <div className="div-card-text p-4 mt-16 rounded-b-md">
+                  <h3 className=" font-bold leading-6 text-white text-xl">
+                    Reducción de costos en los Servicios legales
+                  </h3>
+                  <p>
+                    Nuestra visión es poner al alcance de las PYMEs los
+                    servicios legales que requieren. Por esto estamos
+                    constantemente revisando nuestros procesos e incluyendo
+                    nuevas tecnologías que permiten tener un bajo costo, pero
+                    con una alta calidad.
+                  </p>
+                </div>
               </div>
             </div>
-          </div></div>
+          </div>
+          <div>
+            {" "}
+            <div>
+              <div className="div-bg-four border-b border-gray-200  rounded-md h-full ">
+                <div className="div-before-card">title</div>
+                <div className="div-card-text p-4 mt-16 rounded-b-md">
+                  <h3 className=" font-bold leading-6 text-white text-xl">
+                    Reducción de costos en los Servicios legales
+                  </h3>
+                  <p>
+                    Nuestra visión es poner al alcance de las PYMEs los
+                    servicios legales que requieren. Por esto estamos
+                    constantemente revisando nuestros procesos e incluyendo
+                    nuevas tecnologías que permiten tener un bajo costo, pero
+                    con una alta calidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="bg-gray-400 sm:px-44 px-10">
-      <h3 className="text-center font-bold text-2xl mb-6 text-white">Contáctanos</h3>
-      <p className="text-center text-white">Si quieres conocer nuestra forma de trabajo y los costos de nuestros servicios, diligencia este formulario para que uno de nuestros asesores pueda agendar una cita contigo.</p>
-      <div class="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
-
-        <div>1</div>
-        <div>1</div>
+      <div className="bg-principal sm:px-64 px-10 pb-20">
+        <h3 className="text-center font-bold text-2xl mb-6 pt-10 sm:pt-20 text-white">
+          Contáctanos
+        </h3>
+        <p className="text-center text-white">
+          Si quieres conocer nuestra forma de trabajo y los costos de nuestros
+          servicios, diligencia este formulario para que uno de nuestros
+          asesores pueda agendar una cita contigo.
+        </p>
+        <div class="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
+          <div>
+            {" "}
+            <div className="mb-11">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6  text-gray-900"
+              >
+                Primer nombre
+              </label>
+              <div className="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="block px-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  placeholder="you@example.com"
+                  aria-describedby="email-description"
+                />
+              </div>
+            </div>
+            <div className="mb-11">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Correo electrónico
+              </label>
+              <div className="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  placeholder="you@example.com"
+                  aria-describedby="email-description"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            {" "}
+            <div className="mb-11">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6  text-gray-900"
+              >
+                Apellido
+              </label>
+              <div className="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="block px-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  placeholder="you@example.com"
+                  aria-describedby="email-description"
+                />
+              </div>
+            </div>
+            <div className="mb-11">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Teléfono
+              </label>
+              <div className="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  placeholder="you@example.com"
+                  aria-describedby="email-description"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="pb-20 p-4">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium leading-6 text-gray-900"
+          >
+           Mensaje
+          </label>
+          <div className="mt-2 pb-10">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              placeholder="you@example.com"
+              aria-describedby="email-description"
+            />
+          </div>
+     
+        <button className="border-full principal-color px-6 py-2 rounded-full text-center block m-auto">
+                  Contacto
+                </button>   </div>
       </div>
-      </div>
-
     </div>
   );
 }
