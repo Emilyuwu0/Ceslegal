@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.png";
 export default function footer() {
   return (
     <div>
-      <footer className="bg-slate-400" aria-labelledby="footer-heading">
+      <footer className="bg-white" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
@@ -88,7 +88,7 @@ export default function footer() {
             </div>
           </div>
         </div>{" "}
-        <div className="bg-slate-700 p-6 text-center italic">
+        <div className="bg-tertiary p-6 text-center italic">
           Derechos de autor 2023 | CES Legal Digital
         </div>
       </footer>

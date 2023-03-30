@@ -5,7 +5,7 @@ import LogoContent from "../assets/logo-content.png";
 import Square from "../assets/square.png";
 export default function homePage() {
   return (
-    <div className=" mb-32 ">
+    <div className="  ">
       {" "}
       <div className="relative isolate  pt-24 lg:px-8 bg-principal height-div">
         <div className=" p-2 ">
@@ -159,25 +159,25 @@ export default function homePage() {
             <div className="mb-11">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6  text-gray-900"
+                className="block text-sm font-medium leading-6  text-white"
               >
                 Primer nombre
               </label>
               <div className="mt-2">
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
+                  type="name"
+                  name="name"
+                  id="name"
                   className="block px-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  placeholder="you@example.com"
-                  aria-describedby="email-description"
+
+                  aria-describedby="name-description"
                 />
               </div>
             </div>
             <div className="mb-11">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-medium leading-6 text-white"
               >
                 Correo electrónico
               </label>
@@ -186,8 +186,8 @@ export default function homePage() {
                   type="email"
                   name="email"
                   id="email"
-                  className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  placeholder="you@example.com"
+                  className="block px-4  w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+     
                   aria-describedby="email-description"
                 />
               </div>
@@ -197,37 +197,37 @@ export default function homePage() {
             {" "}
             <div className="mb-11">
               <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6  text-gray-900"
+                htmlFor="lastname"
+                className="block text-sm font-medium leading-6  text-white"
               >
                 Apellido
               </label>
               <div className="mt-2">
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="block px-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  placeholder="you@example.com"
-                  aria-describedby="email-description"
+                  type="lastname"
+                  name="lastname"
+                  id="lastname"
+                  className="block px-4 w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+
+                  aria-describedby="lastname-description"
                 />
               </div>
             </div>
             <div className="mb-11">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-medium leading-6 text-white"
               >
                 Teléfono
               </label>
               <div className="mt-2">
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  placeholder="you@example.com"
-                  aria-describedby="email-description"
+                  type="phone"
+                  name="phone"
+                  id="phone"
+                  className="block px-4  w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  
+                  aria-describedby="phone-description"
                 />
               </div>
             </div>
@@ -235,19 +235,19 @@ export default function homePage() {
         </div>
         <div className="pb-20 p-4">
           <label
-            htmlFor="email"
-            className="block text-sm font-medium leading-6 text-gray-900"
+            htmlFor="message"
+            className="block text-sm font-medium leading-6 text-white"
           >
            Mensaje
           </label>
           <div className="mt-2 pb-10">
             <input
-              type="email"
-              name="email"
-              id="email"
+              type="message"
+              name="message"
+              id="message"
               className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              placeholder="you@example.com"
-              aria-describedby="email-description"
+   
+              aria-describedby="message-description"
             />
           </div>
      
