@@ -13,7 +13,7 @@ export default function briefcase() {
           CES Legal's legal portfolio of services is complete and specialized.
           We cover the areas of commercial law, labor law, civil and tax law.
         </p>
-        <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2  sm:p-44">
+        <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2  sm:p-28">
           <div>
             <button className="text-center">
               <span className="bg-red py-4 px-4">

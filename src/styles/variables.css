@@ -2,7 +2,8 @@
     --bg-principal: #414B59;
     ---bg-secondary: linear-gradient(100.72deg, #DE3A01 7.92%, #D90B59 91.26%);
     --bg-tertiary: #D9D9D9;
-    --bg--red:  #D90B59;
+    --bg-red: #D90B59;
+    --bg-gray: #f4f4f4;
 }
 
 .bg-principal {
@@ -12,6 +13,11 @@
 .bg-tertiary {
     background-color: var(--bg-tertiary);
 }
-.bg-red-{
+
+.bg-red- {
     background-color: var(--bg-red);
+}
+
+.bg-gray {
+    background-color: var(--bg-gray);
 }

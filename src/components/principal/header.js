@@ -7,11 +7,11 @@ import "../../styles/general.css";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigation = [
-    { name: "Inicio", href: "#" },
-    { name: "Portafolio", href: "#" },
-    { name: "Trayectoria", href: "#" },
-    { name: "La compañía", href: "#" },
-    { name: "El equipo", href: "#" },
+    { name: "Inicio", href: "/" },
+    { name: "Portafolio", href: "/briefcase" },
+    { name: "Trayectoria", href: "/trayectory" },
+    { name: "La compañía", href: "/company" },
+    { name: "El equipo", href: "/team" },
   ];
 
   return (
