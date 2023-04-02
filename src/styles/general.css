@@ -72,6 +72,19 @@ flex-direction: row;
   margin-top: 0.9em;
   margin-left: 2rem;
 }
+.img-team{
+  width:25rem;
+  float:right;
+}
+.img-bookmark-white{
+  height:3rem;
+}
+
+
+
+
+
+
 
 /* Responsive */
 
