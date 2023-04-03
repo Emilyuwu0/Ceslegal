@@ -6,6 +6,7 @@ import ContactPage from "../views/contact";
 import BriefcasePage from "../views/briefcase";
 import TrajectoryPage from "../views/trajectory";
 import CompanyPage from "../views/company";
+
 import TeamPage from "../views/team";
 /* import './App.css'; */
 

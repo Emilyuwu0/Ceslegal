@@ -3,6 +3,7 @@ import { Dialog } from "@headlessui/react";
 import Logo from "../../assets/logo.png";
 import LogoMenu from "../../assets/icon-menu.png";
 import "../../styles/general.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end right-5 ">
             <a
-              href="#"
+              href="/contact"
               className="text-sm font-semibold leading-6 text-gray-900 mr-6  principal-color"
             >
               Contacto{" "}
@@ -92,7 +93,7 @@ export default function Header() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="contact"
                     className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Contacto

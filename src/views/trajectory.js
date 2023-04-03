@@ -3,6 +3,8 @@ import "../styles/variables.css";
 import "../styles/general.css";
 import Bookmark from "../assets/bookmark.svg";
 import Hands from "../assets/hands.png";
+import { ListTrayectory } from "../data/trayectory";
+
 export default function trajectory() {
   return (
     <div>
@@ -17,7 +19,7 @@ export default function trajectory() {
         </span>
         <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2  sm:p-28">
           <div>
-            <span className="bg-red py-4  block mt-2">
+            <span className=" py-4  block mt-2">
               {" "}
               CES Legal fue fundada en 2013 por el abogado Carlos Sampedro
               enfocada en prestar servicios legales para PYMES. Nació con el
@@ -28,24 +30,13 @@ export default function trajectory() {
           </div>{" "}
           <div className="bg-gray  p-6 sm:p-10">
             <ul>
-              <li className="flex-li-book">
-                {" "}
-                <img src={Bookmark} alt="book" />
-                <p className="text-bookmark">
-                  {" "}
-                  Trabajadores: Las relaciones laborales
-                </p>
-              </li>
-              <li className="flex-li-book">
-                <img src={Bookmark} alt="book" />
-                <p className="text-bookmark">Impuestos: DIAN</p>
-              </li>
-              <li className="flex-li-book">
-                <img src={Bookmark} alt="book" />
-                <p className="text-bookmark">
-                  Relaciones comerciales: Clientes y proveedores
-                </p>
-              </li>
+              {" "}
+              {ListTrayectory.map((index) => (
+                <li className="flex-li-book">
+                  <img src={Bookmark} alt="book" />
+                  <p className="text-bookmark">{index.title}</p>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

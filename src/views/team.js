@@ -5,8 +5,9 @@ import Bookmark from "../assets/bookmark.svg";
 import BookmarkWhite from "../assets/bookmark-white.png";
 import TeamWork from "../assets/team-works.png";
 import Team from "../assets/team.png";
-export default function team() {
+import { teamList, teamWorkAssociated } from "../data/team";
 
+export default function team() {
   return (
     <div>
       <div className="bg-principal p-10 sm:p-20 mt-20">
@@ -27,47 +28,16 @@ export default function team() {
       <div className="  px-0  sm:px-32">
         <ul className="bg-gray">
           <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2  sm:p-28 mb-12 sm:mb-20">
-            <div>
-              <li className="flex-li-book">
+            {teamList.map((index) => (
+              <li className="flex-li-book " key={index.key}>
                 <img src={Bookmark} alt="book" />
                 <span className="pt-2 ml-4">
                   {" "}
-                  <span className="font-bold text-lg mt-2">
-                    Administradora:{" "}
-                  </span>
-                  <span className=" mt-3"> Lorena Conde</span>
-                </span>
-              </li>{" "}
-              <li className="flex-li-book">
-                <img src={Bookmark} alt="book" />
-                <span className="pt-2 ml-4">
-                  {" "}
-                  <span className="font-bold text-lg mt-2">Abogado Jr: </span>
-                  <span className=" mt-3"> Kimberly Arias</span>
+                  <span className="font-bold text-lg mt-2">{index.title}</span>
+                  <span className=" mt-3">{index.subTitle}</span>
                 </span>
               </li>
-            </div>
-            <div>
-              <li className="flex-li-book">
-                <img src={Bookmark} alt="book" />
-                <span className="pt-2 ml-4">
-                  <span className="font-bold text-lg mt-2">
-                    Coordinador área laboral:{" "}
-                  </span>
-                  <span className=" mt-3"> William Leal</span>
-                </span>
-              </li>
-              <li className="flex-li-book">
-                <img src={Bookmark} alt="book" />
-                <span className="pt-2 ml-4">
-                  {" "}
-                  <span className="font-bold text-lg mt-2">
-                    Director jurídico:{" "}
-                  </span>
-                  <span className=" mt-3"> Carlos E. Sampedro</span>
-                </span>
-              </li>
-            </div>
+            ))}
           </div>
         </ul>
       </div>
@@ -77,67 +47,19 @@ export default function team() {
             Equipo de trabajo legal asociado (externo)
           </span>
           <ul className="pt-14">
-            <li className="flex-li-book text-white pb-6">
-              <img
-                src={BookmarkWhite}
-                alt="book"
-                className="img-bookmark-white"
-              />
-              <span className="ml-6">
-                <span className="font-bold text-lg mt-2 ">
-                  Fernando Salinas:{" "}
+            {teamWorkAssociated.map((index) => (
+              <li className="flex-li-book text-white pb-6">
+                <img
+                  src={BookmarkWhite}
+                  alt="book"
+                  className="img-bookmark-white"
+                />
+                <span className="ml-6">
+                  <span className="font-bold text-lg mt-2 ">{index.title}</span>
+                  <span className=" mt-3">{index.subTitle}</span>
                 </span>
-                <span className=" mt-3">
-                  actualmente rector de la universidad libre y consultor del
-                  área de derecho de familia
-                </span>
-              </span>
-            </li>{" "}
-            <li className="flex-li-book text-white pb-6">
-              <img
-                src={BookmarkWhite}
-                alt="book"
-                className="img-bookmark-white"
-              />
-              <span className="ml-6">
-                <span className="font-bold text-lg mt-2"> Carlos Vargas</span>
-                <span className=" mt-3">
-                  Magistrado Auxiliar de la corte suprema de justicia y fundador
-                  de la página “Laboral al día” – Asesor y Consultor del área
-                  laboral
-                </span>
-              </span>
-            </li>
-            <li className="flex-li-book text-white pb-6">
-              <img
-                src={BookmarkWhite}
-                alt="book"
-                className="img-bookmark-white"
-              />
-              <span className="ml-6">
-                <span className="font-bold text-lg mt-2">Andrés Zapata:</span>
-                <span>
-                  <span className=" mt-3">
-                    Especialista en derecho de transporte con más de 12 años de
-                    experiencia en le sector transporte
-                  </span>
-                </span>{" "}
-              </span>
-            </li>
-            <li className="flex-li-book text-white pb-6">
-              <img
-                src={BookmarkWhite}
-                alt="book"
-                className="img-bookmark-white"
-              />
-              <span className="ml-6">
-                <span className="font-bold text-lg mt-2 ">Daniel Diosa:</span>
-                <span className=" mt-3">
-                  Abogado y contador público, especialista en derecho tributario
-                  – Asesor y consultor del área de derecho tributario
-                </span>
-              </span>
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
         <div>
