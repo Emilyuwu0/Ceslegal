@@ -76,6 +76,27 @@
 .img-bookmark-white {
   height: 3rem;
 }
+.inputs-footer{
+  background: none;
+    border-width: -3px !important;
+    border-bottom: 0.1rem solid gray;
+    width: 100%;
+    padding: 0.5rem ;
+    font-size: 18px;
+
+}
+
+
+.inputs-form-contacts{
+  background: none;
+    border-width: -3px !important;
+    border-bottom: 0.1rem solid white;
+    width: 100%;
+    padding: 0.5rem ;
+    font-size: 18px;
+
+}
+
 
 /* Responsive */
 

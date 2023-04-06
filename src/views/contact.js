@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "../assets/contact.png";
+import "../styles/general.css";
 export default function ContactPage() {
   return (
     <div>
@@ -40,35 +41,25 @@ export default function ContactPage() {
           <div>
             {" "}
             <div className="mb-11">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6  text-white"
-              >
-                Primer nombre
-              </label>
               <div className="mt-2">
                 <input
+                  placeholder="  Primer nombre"
                   type="name"
                   name="name"
                   id="name"
-                  className="block px-4 w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="inputs-form-contacts border-transparent focus:outline-none"
                   aria-describedby="name-description"
                 />
               </div>
             </div>
             <div className="mb-11">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-white"
-              >
-                Correo electrónico
-              </label>
               <div className="mt-2">
                 <input
+                  placeholder="   Correo electrónico"
                   type="email"
                   name="email"
                   id="email"
-                  className="block px-4  w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="inputs-form-contacts border-transparent focus:outline-none"
                   aria-describedby="email-description"
                 />
               </div>
@@ -77,35 +68,25 @@ export default function ContactPage() {
           <div>
             {" "}
             <div className="mb-11">
-              <label
-                htmlFor="lastname"
-                className="block text-sm font-medium leading-6  text-white"
-              >
-                Apellido
-              </label>
               <div className="mt-2">
                 <input
+                  placeholder="Apellido"
                   type="lastname"
                   name="lastname"
                   id="lastname"
-                  className="block px-4 w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="inputs-form-contacts border-transparent focus:outline-none"
                   aria-describedby="lastname-description"
                 />
               </div>
             </div>
             <div className="mb-11">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-white"
-              >
-                Teléfono
-              </label>
               <div className="mt-2">
                 <input
+                  placeholder="Teléfono"
                   type="phone"
                   name="phone"
                   id="phone"
-                  className="block px-4  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="inputs-form-contacts border-transparent focus:outline-none"
                   aria-describedby="phone-description"
                 />
               </div>
@@ -113,18 +94,13 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="pb-20 p-4">
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium leading-6 text-white"
-          >
-            Mensaje
-          </label>
           <div className="mt-2 pb-10">
             <input
+              placeholder="Mensaje"
               type="message"
               name="message"
               id="message"
-              className="block px-4  w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="inputs-form-contacts border-transparent focus:outline-none"
               aria-describedby="message-description"
             />
           </div>

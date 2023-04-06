@@ -30,7 +30,7 @@ export default function briefcase() {
           </div>
         </div> */}
         {/* Tabs */}
-        <div className="m-auto block text-center mt-14 mb-4">
+        <div className="m-auto block text-center mt-14 mb-10 sm:mb-20">
           <Tab.Group>
             <Tab.List>
               <Tab className="bg-red py-2 px-2 rounded-lg text-white mr-0 sm:mr-8 mb-4 sm:0 font-bold hover:bg-pink-700">
