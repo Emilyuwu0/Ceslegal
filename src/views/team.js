@@ -29,7 +29,7 @@ export default function team() {
         <ul className="bg-gray">
           <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2  sm:p-28 mb-12 sm:mb-20">
             {teamList.map((index) => (
-              <li className="flex-li-book " key={index.key}>
+              <li className="flex-li-book " key={index.title}>
                 <img src={Bookmark} alt="book" />
                 <span className="pt-2 ml-4">
                   {" "}
@@ -48,7 +48,7 @@ export default function team() {
           </span>
           <ul className="pt-14">
             {teamWorkAssociated.map((index) => (
-              <li className="flex-li-book text-white pb-6">
+              <li className="flex-li-book text-white pb-6" key={index.title}>
                 <img
                   src={BookmarkWhite}
                   alt="book"
