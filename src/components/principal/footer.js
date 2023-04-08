@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import "../../styles/general.css";
 export default function footer() {
   const navigation = [
-    { name: "Inicio", href: "/" },
-    { name: "Portafolio", href: "/briefcase" },
-    { name: "Trayectoria", href: "/trayectory" },
-    { name: "La compañía", href: "/company" },
-    { name: "El equipo", href: "/team" },
+    { name: "Inicio", to: "/" },
+    { name: "Portafolio", to: "/briefcase" },
+    { name: "Trayectoria", to: "/trayectory" },
+    { name: "La compañía", to: "/company" },
+    { name: "El equipo", to: "/team" },
   ];
   return (
     <div>
@@ -29,18 +30,18 @@ export default function footer() {
                 Enlaces rápidos
               </span>
 
-              <div>
-                <ul className="grid grid-cols-2 gap-4 text-center sm:text-left">
-                  {navigation.map((item) => (
-                    <a
+              <div className="grid grid-cols-2 gap-4 text-center sm:text-left">
+                
+                {navigation.map((item) => (
+                    <Link
                       key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50"
+                      to={item.to}
+                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
-                </ul>
+     
 
                 <div></div>
               </div>
